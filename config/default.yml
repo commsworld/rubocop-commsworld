@@ -1,0 +1,7 @@
+Commsworld/UnspecifiedModelPrivacy:
+  Description: Identifies classes within modules which don't have an adjacent `private_constant` or `public_constant` declaration.
+  Enabled: Yes
+  VersionAdded: 0.1.0
+  Include:
+    - app/models/**/*.rb
+

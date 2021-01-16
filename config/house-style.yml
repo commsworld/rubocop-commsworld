@@ -1,0 +1,154 @@
+AllCops:
+  DisplayCopNames: yes
+  DisplayStyleGuide: yes
+  Exclude:
+    - bin/*
+    - node_modules/**/*
+  ExtraDetails: yes
+
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - db/**/*.rb
+
+Layout/EmptyLinesAroundClassBody:
+  Exclude:
+    - db/**/*.rb
+
+Layout/FirstArrayElementIndentation:
+  Enabled: no
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - db/**/*.rb
+    - config/**/*.rb
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: no
+
+Layout/SpaceAroundOperators:
+  Exclude:
+    - db/**/*.rb
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Exclude:
+    - db/**/*.rb
+
+Layout/SpaceInsideHashLiteralBraces:
+  Exclude:
+    - db/**/*.rb
+
+Lint/MissingSuper:
+  Enabled: no
+
+Lint/UnusedBlockArgument:
+  Enabled: no
+
+Metrics/BlockLength:
+  Exclude:
+    - db/**/*.rb
+    - lib/tasks/**/*.rake
+    - spec/**/*_spec.rb
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - db/**/*.rb
+
+Rails/Delegate:
+  Enabled: no
+
+Rails/LexicallyScopedActionFilter:
+  Exclude:
+    - app/controllers/application_controller.rb
+    - app/controllers/concerns/**/*.rb
+
+Rails/Output:
+  Exclude:
+    - db/seeds/**/*.rb
+    - db/seeds.rb
+
+RSpec/ContextWording:
+  Exclude:
+    - spec/features/**/*_spec.rb
+    - spec/system/**/*_spec.rb
+    - spec/support/**/*.rb
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*_spec.rb
+    - spec/system/**/*_spec.rb
+    - spec/support/**/*.rb
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/InstanceVariable:
+  Exclude:
+    - spec/components/**/*_spec.rb
+    - spec/support/**/*.rb
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - app/components/**/*.rb
+
+Style/ConditionalAssignment:
+  Enabled: no
+
+Style/Documentation:
+  # TODO: It might be a good idea to enable this for specific paths
+  Enabled: no
+
+Style/EmptyElse:
+  Enabled: no
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  Enabled: no
+
+Style/HashAsLastArrayItem:
+  Enabled: no
+
+Style/HashSyntax:
+  Exclude:
+    - db/**/*.rb
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/NumericLiterals:
+  Exclude:
+    - db/**/*.rb
+
+Style/RedundantFetchBlock:
+  Enabled: no
+
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+  AllowInnerSlashes: yes
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrivialAccessors:
+  Enabled: no
+
+Style/WordArray:
+  EnforcedStyle: brackets
