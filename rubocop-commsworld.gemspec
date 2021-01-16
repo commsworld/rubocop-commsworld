@@ -7,7 +7,11 @@ Gem::Specification.new do |spec|
   spec.email         = ["lewis.eason@commsworld.com"]
 
   spec.summary       = "Commsworld rubocop config and cops"
+  spec.homepage      = "https://github.com/commsworld/rubocop-commsworld"
+  spec.license       = "MIT"
+
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -17,10 +21,10 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "rubocop", "~> 1.8.1"
-  spec.add_runtime_dependency "rubocop-rails"
-  spec.add_runtime_dependency "rubocop-rspec"
+  spec.add_runtime_dependency "rubocop", "~> 1.0"
+  spec.add_runtime_dependency "rubocop-rails", "~> 2.5"
+  spec.add_runtime_dependency "rubocop-rspec", "~> 2.0"
 
   spec.add_development_dependency "byebug"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", "~> 3.10"
 end

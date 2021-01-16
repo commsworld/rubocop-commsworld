@@ -4,6 +4,7 @@ AllCops:
   Exclude:
     - bin/*
     - node_modules/**/*
+    - tmp/**/*
   ExtraDetails: yes
 
 Layout/EmptyLinesAroundBlockBody:
