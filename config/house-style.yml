@@ -129,6 +129,9 @@ Style/NumericLiterals:
 Style/RedundantFetchBlock:
   Enabled: no
 
+Style/RedundantInterpolation:
+  Enabled: no
+
 Style/RegexpLiteral:
   EnforcedStyle: mixed
   AllowInnerSlashes: yes
